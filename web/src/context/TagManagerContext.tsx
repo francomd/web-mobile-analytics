@@ -6,6 +6,7 @@ const gtmId = REACT_APP_GTMID
 
 if (!gtmId) throw new Error('Please add the Firebase config to your .env file')
 
+//Initialize TagManager
 TagManager.initialize({
     gtmId,
 })

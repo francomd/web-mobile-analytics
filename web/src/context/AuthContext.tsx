@@ -75,7 +75,6 @@ export const AuthProvider: React.FC = ({ children }) => {
     const value = {
         currentUser,
         login,
-        // signup,
         logout,
         resetPassword,
         updateUserEmail,
