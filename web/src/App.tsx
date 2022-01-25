@@ -8,6 +8,7 @@ import { Dashboard } from './pages/Dashboard'
 import { Login } from './pages/Login'
 import { ProtectedRoute } from './utils/ProtectedRoute'
 import { useGTM } from './context/TagManagerContext'
+import { GTMEvents } from './types/common/TagManager'
 
 export const App = () => {
     const { dataLayer } = useGTM()
@@ -42,7 +43,7 @@ export const App = () => {
 
             dataLayer({
                 dataLayer: {
-                    event: 'screen',
+                    event: GTMEvents.screen,
                     page: {
                         path: location.pathname,
                         title: window.document.title,
