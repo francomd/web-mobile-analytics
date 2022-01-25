@@ -44,10 +44,7 @@ export const App = () => {
             dataLayer({
                 dataLayer: {
                     event: GTMEvents.screen,
-                    page: {
-                        path: location.pathname,
-                        title: window.document.title,
-                    },
+                    screen_title: window.document.title,
                     uuid: currentUser?.uid,
                 },
             })
