@@ -1,0 +1,57 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": ["react-app", "airbnb", "plugin:jsx-a11y/recommended", "plugin:prettier/recommended"],
+    "plugins": ["jsx-a11y", "prettier"],
+    "rules": {
+        "eol-last": "error",
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [".js", ".jsx", ".tsx"]
+            }
+        ],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "react/jsx-props-no-spreading": "off",
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "import/no-extraneous-dependencies": "off",
+        "no-unused-vars": "off",
+        "react/react-in-jsx-scope": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "no-shadow": "off",
+        "react/require-default-props": "off",
+        "import/no-unresolved": "off",
+        "react/jsx-uses-react": "off",
+        "jsx-a11y/media-has-caption": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "@typescript-eslint/explicit-function-return-type": [
+            "warn",
+            {
+                "allowExpressions": true
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+    "globals": {
+        "JSX": "writable"
+    }
+}
